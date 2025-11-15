@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <h1>Gestión de Productos</h1>
+
+    <!-- Formulario para crear producto -->
+    <section class="card">
+        <h2>Registrar Producto</h2>
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="description" placeholder="Descripción">
+            <input type="number" id="price" placeholder="Precio" required>
+            <input type="number" id="stock" placeholder="Stock Inicial" required>
+            <button type="submit">Guardar Producto</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Lista de Productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody id="productTable"></tbody>
+        </table>
+    </section>
+
+    <script src="./js/productos.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Venta</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Registrar Venta</h1>
+
+    <form id="salesForm">
+        <label>Cliente:</label>
+        <select id="client_id" required></select>
+
+        <label>Producto:</label>
+        <select id="product_id" required></select>
+
+        <label>Cantidad:</label>
+        <input type="number" id="quantity" required>
+
+        <label>Total:</label>
+        <input type="number" id="total" disabled>
+
+        <button type="submit">Registrar Venta</button>
+    </form>
+
+    <h2>Listado de Ventas</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID Venta</th>
+                <th>Cliente</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="salesTable"></tbody>
+    </table>
+
+    <script src="js/sales.js"></script>
+</body>
+</html>
